@@ -9,7 +9,8 @@
 <p>
     <%# # отображение ссылки и редактирование %>
     <%= link_to 'Show', article_path(article) %> |
-    <%= link_to 'Edit article', edit_article_path(article) %>
+    <%= link_to 'Edit article', edit_article_path(article) %> |
+    <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: 'Are you sure?'} %>
 </p>
 <hr/>
 <% end %>
