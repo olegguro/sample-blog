@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   # only - ключ с методами 
 resource :contacts, only: [:new, :create], path_name: [:new => '']
-resources :articles
-
+resources :articles do
+  resources :comments
+end
 end
