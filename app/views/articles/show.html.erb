@@ -2,8 +2,6 @@
 <p>
     <%= @article.text %>
 </p>
-<<<<<<< Updated upstream
-=======
 
 <h4>Comments</h4>
 
@@ -15,7 +13,6 @@
     <% end %>
 
 <h4> Add comment</h4>
->>>>>>> Stashed changes
 <p>
 <%= form_for ([@article, @article.comments.build]) do |f| %>
 <p>
