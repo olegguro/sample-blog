@@ -65,5 +65,9 @@ gem 'devise'
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'capybara', ">= 2.15"
+  gem 'rails-controller-testing'
+end
+
+group :test do
+  gem "shoulda-matchers", require: false
 end
